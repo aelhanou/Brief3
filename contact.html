@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Rent cars in the world">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <link rel="stylesheet" href="css/myResponsive.css">
+</head>
+<body>
+    <!--The start of nav bar-->
+    <header>
+        <div class="logo">
+                LOGO
+        </div>
+        <nav>
+            <ul>
+                <li class="disable"><a href="index.html">Home</a></li>
+                <li class="disable"><a href="gallery.html">Gallerie</a></li>
+                <li class="disable"><a href="reservation.html">Reservation</a></li>
+                <li class="disable"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+     
+    </header>
+    <div id="iconMenu" class="bar">
+        <img alt="aa" src="icons/Menu2.jpg" >
+    </div>
+    <div id="menuMobile" class="menuMobile">
+        <ul class="mobile">
+            <li class="mb"><a href="index.html">Home</a></li>
+            <li class="mb"><a href="gallery.html">Gallerie</a></li>
+            <li class="mb"><a href="reservation.html">Reservation</a></li>
+            <li class="mb"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <!--The end of nav bar-->
+    <!-- the start of contact -->
+
+    <div class="generalContac">
+        <div class="contacUs">
+            <h1 class="contact">CONTACT US</h1>
+        </div>
+        <div class="container">
+            <form id="form1">
+              <label >First Name</label>
+              <input type="text" id="name" placeholder="Your name..">
+                <label for="" id="msgName"></label>
+              <label >Email</label>
+              <input type="text" id="email"  placeholder="Your Email..">
+              <label for="" id="msgEmail"></label>
+              <label >Subject</label>
+              <input type="text" id="subject"  placeholder="Your Subject..">
+              <label for="" id="msgnSubject"></label>
+              <label >Message</label>
+              <textarea id="message"  placeholder="Message"  style="height:200px;width:auto;"></textarea>
+              <label for="" id="msgMessage"></label>
+                
+              <input id="submit" type="submit" value="Submit">
+            </form>
+          </div>
+    </div>
+
+    <div id="info"></div>
+    
+    <!-- the end -->
+    
+
+
+
+ <!-- footer -->
+ <footer>
+       
+    <div class="container">
+       
+             <div class="Follow">
+                <h3>Follow Us</h3>
+             </div>
+             <div class="ulFooter">
+                 <ul>
+                     <li> <a href="#"><img alt="aa" src="icons/facebook.png"></a></li>
+                     <li> <a href="#"><img alt="aa" src="icons/Twitter.png"></a></li>
+                     <li> <a href="#"><img alt="aa" src="icons/linkedin.png"></a></li>
+                     <li> <a href="#"><img alt="aa" src="icons/instagram.png"></a></li>
+                  </ul>
+             </div>
+ </div>
+          
+<div class="inputFooter">
+ <div class="Follow">
+     <h3>Newsletter</h3>
+  </div>
+  <div class="subscribFooter">
+     <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
+     <button class="Subscribe">Subscribe</button>
+  </div>
+</div>
+         
+</footer>
+<div class="copyright">
+    <p>Copyright 2021 All Right Reserved By <a href="#">Azzeddine Elhanouni</a></p>
+</div>
+<!-- end footer -->
+
+<script src="js/form.js"></script>
+<script>
+    
+const menuMobile = document.getElementById("menuMobile");
+const iconMenu = document.getElementById("iconMenu");
+
+
+menuMobile.style.display ="none";
+
+iconMenu.addEventListener("click",function() {
+    
+    if(menuMobile.style.display =="flex")
+    {
+        menuMobile.style.display ="none";
+    }
+    else
+    {
+        menuMobile.style.display ="flex";
+    }
+
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header
+{
+    display: flex;
+    width: 100%;
+    min-height: 90px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    margin-left: 80px;
+}
+nav ul {
+    display: flex;
+    font-size: 30px;
+    margin-right: 30px;
+    gap:15px;
+}
+
+nav ul li  {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+.bar  img {
+    display: none;
+ }
+/*The end of nav bar*/
+
+
+
+/*The start of Contact Us part*/
+body {
+    background-color: rgb(149, 149, 149);
+}
+.generalContac {
+    width: 80%;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ddd;
+    margin-top: 50px;
+   box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.4);
+  
+}
+
+.contacUs {
+    font-size: 30px;
+    text-align: center;
+    margin: 30px;
+}
+
+.container form{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+}
+
+input {
+    height: 40px;
+    text-align: center;
+}
+/*the end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer part*/
+footer {
+    width: 100%;
+    display: flex;
+   justify-content: space-evenly;
+   background-color: black;
+   
+}
+
+.Follow {
+    width: 130px;
+    color: white;
+    font-size: 25px;
+    border-bottom: 1px solid white ;
+    margin: 5px;
+}
+.ulFooter ul {
+    display: flex;
+    
+}
+.ulFooter ul li{
+    list-style-type: none;
+    margin: 10px;
+}
+.Newsletter {
+    margin: 5px;
+    width: 360px;
+    height: 30px;
+    margin-right: 0px; 
+}
+
+.Subscribe {
+    margin: 5px;
+    margin-left: 0px;
+    width: 100px;
+    height: 30px;
+}
+.copyright{
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/*end footet*/
+/*footer responsive*/
+@media only screen and (max-width:868px)
+{
+    
+    footer {
+        
+        flex-wrap: wrap;
+        
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .container {
+        
+        width: 100%;
+    }
+    .container .Follow {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .ulFooter ul{
+        justify-content: center;
+    }
+
+    .inputFooter {
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .inputFooter .Follow {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .inputFooter .subscribFooter {
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .inputFooter .Newsletter {
+        width: 250px;
+    }
+    .subscribFooter{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .subscribFooter .Subscribe {
+       
+       margin: auto;
+    }
+}
+
+@media only screen and (max-width:407px)
+{
+    .subscribFooter {
+        display: flex;
+        flex-direction: column;
+    }
+    .subscribFooter .Newsletter {
+        margin: 0px auto;
+    }
+    .subscribFooter .Subscribe {
+        margin: 0px auto;
+    }
+}
+
+/*end of footer responsive*/
+
+
+
+@media only screen and (max-width:400px)
+{
+    .contacUs {
+        font-size: 25px;
+        text-align: center;
+        margin: 30px;
+    }
+}
+
+@media only screen and (max-width:350px)
+{
+    .contacUs {
+        font-size: 20px;
+        text-align: center;
+        margin: 30px;
+    }
+}
+
+
+.info {
+    position: absolute;
+    top: 300px;
+    left: 370px;
+    background-color: white;
+    color: black;
+    width: 50%;
+    height: 400px;
+    overflow-x: hidden;
+    box-shadow: 10px 4px 3px ;
+    padding: 100px;
+    word-break: break-all;
+}
+
+/* 
+class success {
+    border-color: #2ecc71;
+}
+class error  {
+    border-color: #e74c3c;
+} */

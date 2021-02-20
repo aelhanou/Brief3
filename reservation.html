@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="tesla cars">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/myResponsive.css">
+
+
+</head>
+
+<body>
+    <!--The start of nav bar-->
+    <header>
+        <div class="logo">
+            LOGO
+        </div>
+        <nav>
+            <ul>
+                <li class="disable"><a href="index.html">Home</a></li>
+                <li class="disable"><a href="gallery.html">Gallerie</a></li>
+                <li class="disable"><a href="reservation.html">Reservation</a></li>
+                <li class="disable"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div id="iconMenu" class="bar">
+        <img src="icons/Menu2.jpg" alt="he">
+    </div>
+
+    <!--The end of nav bar-->
+    <div id="menuMobile" class="menuMobile">
+        <ul class="mobile">
+            <li class="mb"><a href="index.html">Home</a></li>
+            <li class="mb"><a href="gallery.html">Gallerie</a></li>
+            <li class="mb"><a href="reservation.html">Reservation</a></li>
+            <li class="mb"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <!--The First Part -->
+
+    <div class="gen6">
+        <div  class="image">
+            <img onclick="carburant(0)" class="mg" src="https://freepngimg.com/thumb/motorcycle/1-moto-png-image-motorcycle-png-picture-download.png"
+                alt="hemoto1">
+        </div>
+        <div  class="image">
+            <img onclick="carburant(0)" class="mg" src="https://pngimg.com/uploads/motorcycle/motorcycle_PNG3149.png" alt="hemoto2">
+        </div>
+        <div class="image">
+            <img onclick="carburant(1)" class="mg" src="https://www.dlm.fr/assets/dyn-img/categories/peugeot208.png" alt="hecitadine">
+        </div>
+
+        <div class="image">
+            <img onclick="carburant(2)" class="mg" src="https://cdn.autoportal.com/img/new-cars-gallery/nissan/micra-active/colors/ef8a9e1f95fa942175dc0ad17c2859f3.jpg"
+                alt="hecompact">
+        </div>
+
+
+
+        <div class="image">
+            <img onclick="carburant(3)" class="mg" src="https://purepng.com/public/uploads/large/purepng.com-white-jaguar-xf-2-carcarvehicletransportjaguar-9615246506373y4og.png"
+                alt="heberlin">
+        </div>
+
+
+        <div class="image">
+            <img onclick="carburant(4)" class="mg" src="https://static.rentacar.fr/images/mediatheque/utilitaire/CAT1B-1.png"
+                alt="heutilitaire">
+        </div>
+
+        <div class="image">
+            <img onclick="carburant(5)" class="mg" src="http://s7d2.scene7.com/is/image/Caterpillar/C10087683" alt="heengin">
+        </div>
+
+        <div class="image">
+            <img onclick="carburant(6)" class="mg" src="/images/truck.png" alt="hecamion">
+        </div>
+
+    </div>
+    
+
+    <div class="h1d">
+        <h1 class="carburant">Carburant</h1>
+    </div>
+    <div class="type">
+        <button onclick="btvCalcul(0)" id="electrique" class="electrique hi">Electrique</button>
+        <button onclick="btvCalcul(1)" id="hybride" class="Hybride hi">Hybride</button>
+        <button onclick="btvCalcul(2)" id="essence" class="Essence hi">Essence</button>
+        <button onclick="btvCalcul(3)" id="diesel" class="Diesel hi">Diesel</button>
+    </div>
+
+    
+    <div class="ManAuto">
+        <div class="h1ManAuto">
+            <h1 class="boiteAVitesse">Boite à Vitesse</h1>
+        </div>
+        <div class="btnAutoMan">
+            <button onclick="autoMan(0)" id="automatique" class="Auto electrique hi1">Automatique</button>
+            <button onclick="autoMan(0)" id="manuelle" class="Man electrique hi1">Manuelle</button>
+        </div>
+    </div>
+
+    <div class="jr">
+        <h1 class="duréeDeJours">Durée De Jours</h1>
+        <div class="sub">
+            <input id="jour" type="text" value="" placeholder="Jour">
+            <button onclick="calcul()" id="submit">Submit</button>
+        </div>
+    </div>
+
+        <p id="output"></p>
+
+        
+    <!-- footer -->
+     <footer>
+       
+           <div class="container">
+              
+                    <div class="Follow">
+                       <h3>Follow Us</h3>
+                    </div>
+                    <div class="ulFooter">
+                        <ul>
+                            <li> <a href="#"><img src="icons/facebook.png"></a></li>
+                            <li> <a href="#"><img src="icons/Twitter.png"></a></li>
+                            <li> <a href="#"><img src="icons/linkedin.png"></a></li>
+                            <li> <a href="#"><img src="icons/instagram.png"></a></li>
+                         </ul>
+                    </div>
+        </div>
+                 
+       <div class="inputFooter">
+        <div class="Follow">
+            <h3>Newsletter</h3>
+         </div>
+         <div class="subscribFooter">
+            <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
+            <button class="Subscribe">Subscribe</button>
+         </div>
+       </div>
+                
+     </footer>
+     <!-- <div class="copyright">
+           <p>Copyright 2021 All Right Reserved By <a href="#">Azzeddine Elhanouni</a></p>
+     </div>  -->
+    <!-- end footer -->
+
+
+
+
+    <!-- the start of script -->
+  
+    <script>
+    
+        const menuMobile = document.getElementById("menuMobile");
+        const iconMenu = document.getElementById("iconMenu");
+        
+        
+        menuMobile.style.display ="none";
+        
+        iconMenu.addEventListener("click",function() {
+            
+            if(menuMobile.style.display =="flex")
+            {
+                menuMobile.style.display ="none";
+            }
+            else
+            {
+                menuMobile.style.display ="flex";
+            }
+        
+        })
+        </script>
+    <script src="js/data.js"></script>
+    <script src="js/reservation.js"></script>
+    <script src="js/newJs.js"></script>
+    
+    <!-- end -->
+</body>
+
+</html>
