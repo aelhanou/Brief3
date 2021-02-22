@@ -4,6 +4,10 @@
 }
 
 
+body{
+    width: 100%;
+}
+
 
 header
 {
@@ -45,7 +49,7 @@ nav ul li a {
 /*first part*/
 
 .gen6 {
-    width: 90%;
+   
     display: flex;
     overflow-x: scroll;
     margin-left: auto;
@@ -73,14 +77,11 @@ nav ul li a {
 }
 .h1ManAuto {
     display: flex;
-
-    width: 280px;
     margin: 0 auto;
     font-size: 22px;
 }
 .btnAutoMan {
     display: flex;
-    width: 350px;
     margin: 0 auto;
     gap: 80px;
     margin-bottom: 30px;
@@ -94,7 +95,7 @@ nav ul li a {
     
 }
 .sub{
-    min-width: 400px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -178,12 +179,12 @@ nav ul li a {
  .btnAutoMan {
      display: flex;
      flex-wrap: wrap;
-     width: 350px;
+    min-width: 100%;
      margin: 0 auto;
      justify-content: center;
 }
 #jour {
-    width: 250px;
+    width: 100%;
     min-height: 25px;
     text-align: center;
     margin: auto;
